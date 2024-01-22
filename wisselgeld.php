@@ -21,9 +21,9 @@ try {
         if ($geldgeef >= $eenheid) { // check grootte
             $count = floor($geldgeef / $eenheid); // bereken aantal keer / hoevaak gaat eenheid in geldgeef en dat antwoord gaat naar count
             if ($eenheid >= 100) { // check voor euro
-                echo "$count x " . $eenheid / 100 . " euro\n"; // geef euro
+                echo "$count x " . $eenheid / 100 . " euro" . PHP.EOL; // geef euro
             } else { // in centen
-                echo "$count x " . $eenheid . " cents\n"; // geef cent
+                echo "$count x " . $eenheid . " cents" . PHP.EOL; // geef cent
             }
             $geldgeef = $geldgeef % $eenheid; // // gaat door elke eenheid, groter of gelijk, zo niet dan gaat ie naar volgende eenheid, door foreach loop gaat die door alles
         }
